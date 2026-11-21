@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Lingua design system utilities (BEM naming).
+ * Tokens come from src/theme -> tailwind.config.js.
+ */
+@layer components {
+  /* ---------- Typography ---------- */
+  .heading--h1 {
+    @apply font-poppins-bold text-h1 text-ink;
+  }
+  .heading--h2 {
+    @apply font-poppins-semibold text-h2 text-ink;
+  }
+  .heading--h3 {
+    @apply font-poppins-semibold text-h3 text-ink;
+  }
+  .heading--h4 {
+    @apply font-poppins-medium text-h4 text-ink;
+  }
+
+  .body--lg {
+    @apply font-poppins text-body-lg text-ink;
+  }
+  .body--md {
+    @apply font-poppins text-body-md text-ink;
+  }
+  .body--sm {
+    @apply font-poppins text-body-sm text-ink-secondary;
+  }
+
+  .caption {
+    @apply font-poppins text-caption text-ink-secondary;
+  }
+
+  /* Uppercase labels, e.g. "PRIMARY", "SEMANTIC" */
+  .overline {
+    @apply font-poppins-medium text-body-sm uppercase tracking-wide text-ink-secondary;
+  }
+  /* Purple section titles, e.g. "BRAND", "COLORS" */
+  .overline--brand {
+    @apply font-poppins-semibold text-h4 uppercase tracking-wide text-lingua-purple;
+  }
+
+  /* ---------- Layout ---------- */
+  .screen {
+    @apply flex-1 bg-background;
+  }
+
+  .card {
+    @apply rounded-3xl border border-border bg-background p-5;
+  }
+  .card--surface {
+    @apply border-0 bg-surface;
+  }
+
+  .divider {
+    @apply h-px w-full bg-border;
+  }
+}
