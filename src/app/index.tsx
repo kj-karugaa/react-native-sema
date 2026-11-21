@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -14,6 +15,12 @@ export default function Index() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: neutral.background }}>
       <ScrollView contentContainerStyle={{ padding: 20, gap: 20 }}>
+        <Link href="/onboarding" className="card">
+          <Text className="heading--h3 text-lingua-purple">
+            Open onboarding screen →
+          </Text>
+        </Link>
+
         <View className="card gap-3">
           <Text className="overline--brand">Typography</Text>
           <View className="divider" />
